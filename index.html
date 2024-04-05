@@ -64,6 +64,70 @@
                 options: {}
                 });
         }
+
+
+
+
+
+
+
+
+    //     <h1>Car Crashes in Catalonia</h1>
+    // <canvas id="myChart" width="400" height="200"></canvas>
+    // <script>
+    //     window.addEventListener("load", fetchData);
+    //     function fetchData() {
+    //         const xhr = new XMLHttpRequest();
+    //     xhr.open('GET', 'http://localhost:3000/csv-crash', true);
+    //     xhr.onreadystatechange = function() {
+    //         if (xhr.readyState === 4 && xhr.status === 200) {
+    //             let crash = xhr.responseText;
+    //             const cataloniaCrashes = processCrash(crash);
+    //             renderChart(cataloniaCrashes);
+    //             // console.log(CataloniaCrashes);
+    //         } else {
+    //             console.log('Error', xhr.statusText);
+    //         }
+    //     }
+    //     xhr.send();
+    //     }     
+
+    //     function processCrash(crash) {
+    //         const days = [];
+    //         const numbers = [];
+    //         rows = data.split('\n').splice(1);
+    //         rows.forEach(row => {
+    //             const cols = row.split(',');
+    //             days.push(cols[0]);
+    //             numbers.push(14 + parseFloat(cols[1]));
+    //             //console.log(days);
+    //             //console.log(numbers);
+    //             // console.log(cols[0]);
+    //         });
+    //         return{days, numbers};
+    //         // console.log(data[0]);
+    //     }
+
+    //     function renderChart(crash) {
+    //         console.log('hi from renderChart', data);
+    //         const ctx = document.getElementById('myChart');
+
+    //         new Chart(ctx, {
+    //             type: 'line',
+    //             data: {
+    //             labels: crash.days,
+    //             datasets: [{
+    //                 label: 'Number of Crash',
+    //                 data: crash.numbers,
+    //                 fill: false,
+    //                 borderWidth: 1,
+    //                 borderColor: 'rgba(255, 199, 132, 1)',
+    //                 backgroundColor: 'rgba(255, 99, 132, 0.5)',
+    //             }]
+    //             },
+    //             options: {}
+    //             });
+    //     }
     </script>
 </body>
 </html>

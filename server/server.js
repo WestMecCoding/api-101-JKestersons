@@ -22,6 +22,21 @@ app.get('/csv-data', (req, res) => {
    });
 });
 
+
+app.get('/csv-crash', (req, req) => {
+   const csvPath = path.join(__dirname, '..', 'crash', 'crash_catalonia.csv');
+   fs.readFile(csvPath, 'utf8', (err, crash) => {
+      if (err) {
+         console.error(err);
+         return
+      }
+      res.type('text/plain');
+      res.send(crash);
+   });
+});
+
+
+
  app.listen(port, () => {
     console.log(`sever is listening on port${port}`);
  });
